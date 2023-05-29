@@ -5,7 +5,6 @@ class Author:
         self._name = name
         self._articles = []
 
-    @property
     def name(self):
         return self._name
     
@@ -27,5 +26,3 @@ class Author:
         for article in self._articles:
             unique_categories.add(article.magazine().category())
         return list(unique_categories)
-
-    pass

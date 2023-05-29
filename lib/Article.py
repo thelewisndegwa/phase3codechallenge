@@ -1,6 +1,5 @@
 class Article:
-    instances = []
-
+  
     def __init__(self, author, magazine, title):
         self._author = author
         self._magazine = magazine
@@ -16,9 +15,4 @@ class Article:
         return self._author
 
     def magazine(self):
-        return self._magazine
-
-    @classmethod
-    def all(cls):
-        return cls.instances
-    pass
+        return self._magazine 
